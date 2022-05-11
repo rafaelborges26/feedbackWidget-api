@@ -19,4 +19,5 @@ export class NodemailerMailService implements MailAdapter {
     subject: subject,
     html: body,
     }
-}
+    )}
+  }
