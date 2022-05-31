@@ -6,6 +6,7 @@ import { SubmitFeedbackUseCase } from './use-cases/submit-feedback-use-case';
 
 export const routes = express.Router()
 
+try {
 routes.post('/feedbacks', async (req, res) => {
     console.log(req.body)
 
@@ -27,3 +28,7 @@ routes.post('/feedbacks', async (req, res) => {
 
     return res.status(201).send()
 })
+
+} catch (error) {
+ console.log(error)   
+}
